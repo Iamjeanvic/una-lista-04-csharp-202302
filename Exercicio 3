@@ -1,0 +1,58 @@
+	string nome,sexo,estadoCivil;
+    int idade;
+    double salario;
+			Console.WriteLine("Digite seu nome");
+			nome=Console.ReadLine();
+			
+		while (nome.Length<3){
+			Console.WriteLine("nome menor que tres caracteres , digite novamente!");
+		
+		Console.WriteLine("Digite seu numero");
+			nome=Console.ReadLine();
+		}
+		
+		Console.WriteLine("Digite sua idade: ");
+	    idade=int.Parse(Console.ReadLine());
+		
+		while (idade <0 || idade >150){
+			
+			Console.WriteLine("Idade invalida, digite novamente!");
+		
+		    Console.WriteLine("digite sua idade");
+			idade=int.Parse(Console.ReadLine());
+		}
+		
+		Console.WriteLine("Digite seu salario: ");
+	    salario=double.Parse(Console.ReadLine());
+		
+		while (salario <0){
+			
+		    Console.WriteLine("Salario menor que 0, digite novamente!");
+		
+		    Console.WriteLine("digite sua idade");
+			salario=int.Parse(Console.ReadLine());
+			
+		}
+		Console.WriteLine("Digite m para masculino e f para feminino");
+	    sexo=Console.ReadLine();
+		
+		while (sexo != "m" && sexo != "f"){
+			   
+			
+		    Console.WriteLine("");
+		
+		    Console.WriteLine("Letra informada invalida digite novamente");
+			sexo=Console.ReadLine();
+		}
+		Console.WriteLine("Digite seu estado civil : 's', 'c', 'v', 'd'");
+	    estadoCivil=Console.ReadLine();
+		
+		while (estadoCivil !=  "s" || estadoCivil !=  "	c" || estadoCivil !=  "v" || estadoCivil !=  "d"){
+			   
+			
+		    Console.WriteLine("Letra informada invalida digite novamente");
+			Console.WriteLine("Digite seu estado civil : 's', 'c', 'v', 'd'");
+			estadoCivil=Console.ReadLine();
+		
+		}
+		Console.ReadLine();
